@@ -111,6 +111,8 @@ export const login = async (req, res) => {
         maxAge: 1 * 24 * 60 * 60 * 1000, // 1 day
         httpOnly: true,
         sameSite: "none",
+        secure:true,
+        domain:['jobboard-wctl.onrender.com','jobboard-xghs.vercel.app']
       })
       .json({
         message: `Welcome back ${user.fullname}`,
