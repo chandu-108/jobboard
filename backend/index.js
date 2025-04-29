@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOptions = {
-    origin: "http://localhost:5173", // Fixed typo from "orgin"
+    origin: "http://localhost:5174", // Fixed typo from "orgin"
     credentials: true
 };
 
