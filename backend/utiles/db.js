@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+export const maxDuration=30;
 
 const connectDB = async () => {
     try {
