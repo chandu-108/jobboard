@@ -112,7 +112,6 @@ export const login = async (req, res) => {
         httpOnly: true,
         sameSite: "none",
         secure:true,
-        domain:['jobboard-wctl.onrender.com','jobboard-xghs.vercel.app']
       })
       .json({
         message: `Welcome back ${user.fullname}`,
