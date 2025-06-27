@@ -8,6 +8,7 @@ import userRoute from "./routes/user.route.js";
 import companyRoute from "./routes/company.route.js";
 import jobRoute from "./routes/job.route.js";
 import applicationRoute from "./routes/application.route.js";
+import analyzerRoutes from "./routes/analyzer.js"
 
 // ✅ Correct import
 // Ensure the correct file extension (.js or .ts)
@@ -32,6 +33,7 @@ app.use(cors(corsOptions));
 const PORT = process.env.PORT || 5000;
 
 //api's
+app.use("/api/v1/analyze-resume", analyzerRoutes);
 app.use("/api/v1/user",userRoute);
 app.use("/api/v1/company",companyRoute);
 app.use("/api/v1/job",jobRoute);
